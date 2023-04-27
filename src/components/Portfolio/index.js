@@ -1,7 +1,7 @@
 import React from 'react';
 import MyProjects from '../Projects';
 import HotShots from '../../assets/photos/hot-shots.png';
-import HeaderImage from '../../assets/photos/header-image.jpeg';
+//import HeaderImage from '../../assets/photos/header-image.jpeg';
 
 const accomplishments = [
     {
@@ -16,9 +16,9 @@ function MyPortfolio() {
 
     return (
         < React.Fragment >
-            <div className='container-fluid'>
+            {/* <div className='container-fluid'>
                 <img className='img-fluid mw-75 mx-auto d-block' src={HeaderImage} />
-            </div>
+            </div> */}
             <div className='container'>
                 <div className='row row-col-1 row-cols-md g-4'>
                     {accomplishments.map((proj) => (
