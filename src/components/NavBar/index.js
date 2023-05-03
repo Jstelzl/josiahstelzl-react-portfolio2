@@ -1,54 +1,55 @@
 import React from 'react';
 //import headerImage from '../../assets/photos/header-image.jpeg';
-import bootstrap from 'bootstrap'
+
 
 function NavBar({ page, handlePageChange }) {
 
-    return(
+    return (
+
         <nav className='navbar navbar-expand-lg'>
-            <div className='container-fluid justify-content-center'>
+            <div className='container-fluid justify-content-center fixed-top bg-dark p-3'>
                 <div>
                     <ul className='nav'>
-                        {/* resume */}
-                        <li className='nav-item'>
-                            <a 
-                                href='#resume'
-                                onClick={() => handlePageChange('resume')}
-                                className={page === 'resume' ? 'nav-link active text-info text-opacity-15' : 'nav-link text-secondary'}
-                            > 
-                            Resume
-                            </a>
-                        </li>
                         {/* About */}
                         <li className='nav-item'>
-                            <a 
+                            <a
                                 href='#about'
                                 onClick={() => handlePageChange('about')}
                                 className={page === 'about' ? 'nav-link active text-info text-opacity-15' : 'nav-link text-secondary'}
-                            > 
-                            About
+                            >
+                                About
+                            </a>
+                        </li>
+                        {/* resume */}
+                        <li className='nav-item'>
+                            <a
+                                href='#resume'
+                                onClick={() => handlePageChange('resume')}
+                                className={page === 'resume' ? 'nav-link active text-info text-opacity-15' : 'nav-link text-secondary'}
+                            >
+                                Resume
                             </a>
                         </li>
                         {/* Portfolio */}
                         <li className='nav-item'>
-                            <a 
+                            <a
                                 href='#portfolio'
                                 onClick={() => handlePageChange('portfolio')}
                                 className={page === 'portfolio' ? 'nav-link active text-info text-opacity-15' : 'nav-link text-secondary'}
-                            > 
-                            Portfolio
+                            >
+                                Portfolio
                             </a>
                         </li>
                         {/* Contacts */}
-                        <li className='nav-item'>
-                            <a 
+                        {/* <li className='nav-item'>
+                            <a
                                 href='#contact'
                                 onClick={() => handlePageChange('contact')}
                                 className={page === 'contact' ? 'nav-link active text-info text-opacity-15' : 'nav-link text-secondary'}
-                            > 
-                            Contact Me
+                            >
+                                Contact Me
                             </a>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>

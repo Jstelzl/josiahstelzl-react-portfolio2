@@ -1,31 +1,25 @@
 import React, { useState } from 'react';
 import NavBar from '../NavBar';
 import About from '../About';
-import ContactMe from '../ContactMe';
 import Resume from '../Resume';
 import MyPortfolio from '../Portfolio';
 import Footer from '../Footer';
-import bootstrap from 'bootstrap';
 
 export default function MainPage() {
 
-    const [page, pageChange] = useState('About');
+    const [page, pageChange] = useState('about');
 
     const showPage = () => {
 
         if (page === 'about') {
             return <About />;
         }
-        if (page === 'portflolio') {
+        if (page === 'portfolio') {
             return <MyPortfolio />
         }
-        if (page === 'Resume') {
+        if (page === 'resume') {
             return <Resume />
         }
-        if (page === 'contact') {
-            return <ContactMe />
-        }
-
     };
 
     const handlePageChange = (updatePage) => pageChange(updatePage);
